@@ -97,4 +97,6 @@ public class InverterStatus
         PVInputWattHour = 0;
         pvInputWattHourLastComputed = DateTime.Now;
     }
+
+    public String DSChargeStatus { get; set; }
 }

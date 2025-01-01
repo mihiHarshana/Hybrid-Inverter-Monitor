@@ -10,6 +10,31 @@
 @if (status is not null)
 {
     <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="card">
+                    <h5 class="card-header">
+                        <span class="oi oi-grid-two-up" aria-hidden="true" />
+                        Device Status
+                    </h5>
+                    <div class="card-body pt-0">
+                        <div class="container text-center fw-bold p-0">
+                            <div class="row bg-light rounded">
+
+                                <div class="col">
+                                    <div class="fs-6 text-warning">@status?.DSChargeStatus</div>
+                                </div>
+
+                                <div class="col">
+                                    <div class="fs-6 text-success">@status?.GridVoltage</div> V
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         @if (status?.GridUsageWatts > 100)
         {
